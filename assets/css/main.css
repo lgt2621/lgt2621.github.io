@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
+		color: #89d2dc;
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -110,7 +110,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4;
+		border-bottom: solid 1px #5E2BFF;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -119,9 +119,12 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #4acaa8 !important;
 		}
+	a.link {
+		color: #5E2BFF;
+		}
 
 	strong, b {
-		color: #777;
+		color: #F1A208;
 		font-weight: 700;
 	}
 
@@ -132,9 +135,12 @@ input, select, textarea {
 	p {
 		margin: 0 0 2.25em 0;
 	}
+	p.header {
+		margin:0 0 0em 0;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #6564db;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -2244,7 +2250,16 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
-
+		
+		ul.paper {
+			margin: 0 0 0em 0;
+		}
+	        ul.paper li {
+			    border-top: solid 0px #f4f4f4;
+				padding: 0em 0;
+		}
+		
+	
 	dl {
 		margin: 0 0 2.25em 0;
 	}
@@ -2449,13 +2464,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 2px #f4f4f4;
+			border: solid 2px #102D42;
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #fafafa;
+				background-color: #101d42;
 			}
 
 		table td {
@@ -2502,6 +2517,28 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
+			}
+		
+	table.paper {
+		margin: 0 0 0em 0;
+		width: 100%;
+		}
+			
+		    table.paper tbody tr {
+			    background-color: #0d1317;
+				border: solid 0px #e4e4e4;
+		    }
+			table.paper tbody tr:nth-child(2n) {
+				border-bottom: solid 3px #101D42;
+			}
+			
+			table.paper tbody tr td {
+				border: solid 0px #e4e4e4;
+				border-left-width: 0;
+				border-top-width: 0;
+			}
+			table.paper td {
+				padding: 0em 0.75em;
 			}
 
 /* Button */
@@ -2700,7 +2737,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		background: #8D99AE;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2741,7 +2778,7 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
+				margin: 0 auto 1.25em auto;
 				width: 8em;
 			}
 
@@ -2802,12 +2839,12 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.85em 0;
+						padding: 0.5em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
+							background: #0d1317;
 							color: #4acaa8 !important;
 						}
 
@@ -2818,14 +2855,14 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: #0d1317;
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px #101d42;
 	}
 
 		#main > section > .container {
@@ -2839,7 +2876,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #101d42;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
@@ -2888,10 +2925,12 @@ input, select, textarea {
 
 				#header > header {
 					padding: 2em;
+					padding-bottom: 1em;
 				}
 
 				#header > footer {
-					padding: 1.5em;
+					padding: 1em;
+					padding-top: 0.5em;
 				}
 
 		/* Wrapper */
@@ -3030,7 +3069,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
+				background: #7E5A9B;
 				color: #fff;
 				min-width: 320px;
 			}
@@ -3076,7 +3115,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #8D99AE;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3314,3 +3353,4 @@ input, select, textarea {
 			}
 
 	}
+	
