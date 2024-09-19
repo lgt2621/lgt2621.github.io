@@ -2541,6 +2541,37 @@ input, select, textarea {
 				padding: 0em 0.75em;
 			}
 
+	table.interests_odd{
+		margin: 0 0 0em 0;
+		width: 100%;
+	}
+	    table.interests_odd tbody tr {
+		    border: solid 2px #102D42;
+		    border-left: 0;
+		    border-right: 0;
+	    	background-color: #101d42;
+		}
+
+	    table.interests_odd td {
+			text-align: center;
+	    }
+	
+	table.interests_even{
+		margin: 0 0 0em 0;
+		width: 100%;
+	}
+		table.interests_even tbody tr {
+			border: solid 2px #102D42;
+			border-left: 0;
+			border-right: 0;
+			background-color: #0d1317;
+		}
+	
+		table.interests_even td {
+			text-align: center;
+		}
+	
+
 /* Button */
 
 	input[type="submit"],
@@ -2839,7 +2870,7 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.5em 0;
+						padding: 0.75em 0;
 						text-decoration: none;
 					}
 
